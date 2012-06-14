@@ -1,0 +1,8 @@
+<% content_for :sidebar do %>
+<% end %>
+
+<div data-hook="homepage_products">
+  <%= render :partial => 'spree/shared/product_hero', :locals => { :products_f => @products_h } %>
+  <%= render :partial => 'spree/shared/products_featured', :locals => { :products_f => @products_f } %>
+</div>
+
